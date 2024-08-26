@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Encriptador de Texto - Proyecto ONE: Oracle Next Education">
+    <meta name="robots" content="index,follow">
+
+    <!-- Hojas de estilo -->
+    <link rel="stylesheet" href="./stylesheet/reset.css">
+    <link rel="stylesheet" href="./stylesheet/loader.css">
+    <link rel="stylesheet" href="./stylesheet/style.css">
+    <link rel="stylesheet" href="./stylesheet/tablet.css" media="screen and (min-width: 760px)">
+    <link rel="stylesheet" href="./stylesheet/desktop.css" media="screen and (min-width: 1024px)">
+
+    <!-- Pagicon -->
+    <link rel="icon" type="image/x-icon" href="./image/pagicon.jpg">
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+
+    <!-- Librería de alertar -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <title>Encriptador de Texto</title>
+</head>
+
+<body>
+    <div class="container--loader">
+        <div class="loader"></div>
+    </div>
+    
+    <main>
+        <div class="contenedor-izq">
+            <textarea name="" id="input-texto" class="input-texto" cols="30" rows="13" placeholder="Ingrese el texto aquí"></textarea>
+            
+        </div>
+        
+        <div class="container-btns">
+            <button class="b-encriptar" id="b-encriptar" onclick="encriptar()">ENCRIPTAR</button>
+            <button class="b-desencriptar" onclick="desencriptar()">DESENCRIPTAR</button>
+            <button class="b-copiar" onclick="copiar()">COPIAR</button>
+        </div>
+
+        <div class="solo-letras">
+            <p>*Solo letras minúsculas y sin acentos</p>
+        </div>
+        
+        <div class="contenedor-der">
+            <div class="opacidad-imagen"></div> 
+
+            <div class="contenedor-texto">
+                <textarea name="" id="output-texto" class="output-texto" cols="30" rows="10" placeholder="Bienvenido"></textarea>
+                <P id="texto1-contder" class="texto1-contder">Ningún mensaje fue encontrado</P>
+                <br><br>
+                <p id="texto2-contder" class="texto2-contder">Ingresa el texto que desees encriptar o desencriptar.</p>               
+            </div>              
+        </div>
+    </main>
+
+    <footer>
+        <a href="https://github.com/juanchebas" target="_blank" rel="noopener"><img class="icon_github" src="./image/icon-github.png" alt="GitHub"></a>
+        <span>Dev: Juan Sebastian Torres Rozo</span>
+        <a href="https://www.linkedin.com/in/juan-sebastian-torres-rozo-864011225/" target="_blank" rel="noopener"><img class="icon_linkedin" src="./image/icon-linkedin.png" alt="linkedIn"></a>
+    </footer>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
